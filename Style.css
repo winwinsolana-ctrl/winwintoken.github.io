@@ -219,8 +219,8 @@ background: #030f05;
 }
 
 .logo img {
-    width: 120px;  
-    height: 120px;
+    width: 100px;  
+    height: 100px;
 border-radius: 20px;
  box-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
 }
@@ -443,7 +443,7 @@ border-radius: 20px;
 .social-icons a {
   font-size: 35px;
   margin: 0 10px;
-  color: white; /* Logona göre deðiþtirebiliriz */
+  color: white; /* Logona gÃ¶re deÃ°iÃ¾tirebiliriz */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -1824,4 +1824,5 @@ border-radius: 20px;
 		width: 100%;
 		max-width: 250px;
 	}
+
 }
