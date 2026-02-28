@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win-Win Token - Rewards Ecosystem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Experience...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <h1 class="brand-name">WIN-WIN TOKEN</h1>
+            <p class="tagline">REWARDS ECOSYSTEM</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">About</div>
+            </div>
+            <div class="menu-item initial-load" data-section="products">
+                <div class="menu-badge">PR</div>
+                <div class="menu-title">Products</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">CT</div>
+                <div class="menu-title">Contact</div>
+            </div>
+            <div class="menu-item initial-load" data-section="privacy">
+                <div class="menu-badge">PP</div>
+                <div class="menu-title">Privacy Policy</div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="contentArea">
+
+            <!-- Products Section -->
+            <div class="content-section" id="products">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGradP" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ff66"/>
+                                    <stop offset="100%" style="stop-color:#39ff14"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGradP)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGradP)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>WIN-WIN TOKEN</h3>
+                        <p>Rewards Ecosystem</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">&#8592; Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Products</h2>
+                    <p class="section-subtitle">Powered by Win-Win Token</p>
+                </div>
+
+                <div class="services-list">
+                    <div class="service-row">
+                        <a href="https://play.google.com/store/apps/details?id=com.win.winwatchandearn" target="_blank" style="display:contents;">
+                            <div class="service-row-icon">
+                                <img src="images/win_watchandearn_logo.png" alt="Win Watch and Earn logo">
+                            </div>
+                            <div class="service-row-content">
+                                <h4>Win Watch &amp; Earn App</h4>
+                                <p>Win Watch &amp; Earn is a reward-based mobile app where users earn Win-Win tokens by watching ads and completing simple tasks. Turn your free time into digital rewards in a fun and easy way.</p>
+                            </div>
+                        </a>
+                        <div class="service-row-arrow">&#8594;</div>
+                    </div>
+                    <div class="service-row">
+                        <div class="service-row-icon"></div>
+                        <div class="service-row-content">
+                            <h4>Coming Soon</h4>
+                            <p>Coming Soon</p>
+                        </div>
+                        <div class="service-row-arrow">&#8594;</div>
+                    </div>
+                    <div class="service-row">
+                        <div class="service-row-icon"></div>
+                        <div class="service-row-content">
+                            <h4>Coming Soon</h4>
+                            <p>Coming Soon</p>
+                        </div>
+                        <div class="service-row-arrow">&#8594;</div>
+                    </div>
+                    <div class="service-row">
+                        <div class="service-row-icon"></div>
+                        <div class="service-row-content">
+                            <h4>Coming Soon</h4>
+                            <p>Coming Soon</p>
+                        </div>
+                        <div class="service-row-arrow">&#8594;</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ff66"/>
+                                    <stop offset="100%" style="stop-color:#39ff14"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad5)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad5)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>WIN-WIN TOKEN</h3>
+                        <p>Rewards Ecosystem</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">&#8592; Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Our story, mission, and values</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Win-Win Token &#8211; A Shared Reward Ecosystem</h3>
+                        <p>Win-Win Token is a utility-based digital reward token designed to power a growing ecosystem of mobile apps and games. Its purpose is simple: create a system where users earn real digital value for their time, engagement, and participation.</p>
+                        <p>Instead of isolated in-app currencies, Win-Win Token connects multiple applications under one unified reward system. Users can earn tokens by watching rewarded ads, playing games, completing daily tasks and challenges, achieving milestones, and participating in campaigns and referrals. Every meaningful action inside the ecosystem becomes an opportunity to earn.</p>
+                        <p>As more apps and games integrate with the system, the token&#8217;s utility expands. Win-Win Tokens can be used to unlock premium features, access exclusive content, purchase in-app upgrades, or participate in special events. The vision is to build a balanced digital economy where users are rewarded for engagement, developers increase retention and monetization, and the ecosystem grows sustainably.</p>
+                        <p>One ecosystem. Multiple apps. Real rewards. A true win-win.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about.png" alt="About Win-Win Token">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ff66"/>
+                                    <stop offset="100%" style="stop-color:#39ff14"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad6)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>WIN-WIN TOKEN</h3>
+                        <p>Rewards Ecosystem</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">&#8592; Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Let&#8217;s create something amazing together</p>
+                </div>
+
+                <div class="contact-grid">
+                    <form action="https://formsubmit.co/winwinsolana@gmail.com" method="POST">
+                        <div class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </div>
+                    </form>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">&#128205;</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>T&#220;RK&#304;YE</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">&#128231;</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:winwinsolana@gmail.com">winwinsolana@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00ff66">
+                                    <path d="M200-246q54-53 125.5-83.5T480-360q83 0 154.5 30.5T760-246v-514H200v514Zm379-235q41-41 41-99t-41-99q-41-41-99-41t-99 41q-41 41-41 99t41 99q41 41 99 41t99-41ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm69-80h422q-44-39-99.5-59.5T480-280q-56 0-112.5 20.5T269-200Zm168.5-337.5Q420-555 420-580t17.5-42.5Q455-640 480-640t42.5 17.5Q540-605 540-580t-17.5 42.5Q505-520 480-520t-42.5-17.5ZM480-503Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Social Accounts</h4>
+                                <div class="social-icons">
+                                    <a href="https://x.com/winwinsolana" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="https://discord.gg/kEnhjTtXdn" target="_blank"><i class="fab fa-discord"></i></a>
+                                    <a href="https://github.com/winwinsolana-ctrl" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Policy Section -->
+            <div class="content-section" id="privacy">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ff66"/>
+                                    <stop offset="100%" style="stop-color:#39ff14"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad7)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad7)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>WIN-WIN TOKEN</h3>
+                        <p>Rewards Ecosystem</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">&#8592; Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Privacy Policy</h2>
+                    <p class="section-subtitle">Last updated: January 2026</p>
+                </div>
+
+                <div class="privacy-content">
+                    <div class="privacy-block">
+                        <h3>1. Introduction</h3>
+                        <p>Welcome to Win-Win Token. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications, websites, and related services.</p>
+                        <p>By accessing or using our Services, you agree to this Privacy Policy. If you do not agree, please discontinue use of our Services immediately.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>2. Information We Collect</h3>
+                        <p>We may collect the following types of information:</p>
+                        <ul class="privacy-list">
+                            <li><span>Account Information:</span> Username, email address, and encrypted password upon registration.</li>
+                            <li><span>Usage Data:</span> Tasks completed, ads watched, tokens earned, and session duration.</li>
+                            <li><span>Device Information:</span> Device type, OS, unique identifiers, IP address, and mobile network info.</li>
+                            <li><span>Transaction Data:</span> Token earnings, redemptions, and in-app reward activities.</li>
+                            <li><span>Communications:</span> Content of messages sent via email or our contact form.</li>
+                        </ul>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>3. How We Use Your Information</h3>
+                        <ul class="privacy-list">
+                            <li><span>Service Delivery:</span> To operate and maintain the Win-Win Token ecosystem.</li>
+                            <li><span>Token Management:</span> To track and calculate earned Win-Win Tokens.</li>
+                            <li><span>Personalization:</span> To tailor your experience within the ecosystem.</li>
+                            <li><span>Communication:</span> To send notifications, updates, and security alerts.</li>
+                            <li><span>Analytics:</span> To analyze usage patterns and improve our Services.</li>
+                            <li><span>Legal Compliance:</span> To comply with applicable laws and regulations.</li>
+                        </ul>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>4. Advertising &amp; Third-Party Services</h3>
+                        <p>Our apps include rewarded advertising. When you watch ads to earn tokens, third-party advertising networks may collect data to serve relevant ads. These partners operate under their own privacy policies.</p>
+                        <p>We may use third-party analytics tools such as Firebase to understand how users interact with our Services. These services collect anonymized usage data.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>5. Data Sharing &amp; Disclosure</h3>
+                        <p>We do not sell your personal data. We may share information only in these circumstances:</p>
+                        <ul class="privacy-list">
+                            <li><span>Service Providers:</span> Trusted vendors assisting in operations, under confidentiality obligations.</li>
+                            <li><span>Legal Requirements:</span> When required by law, court order, or governmental authority.</li>
+                            <li><span>Business Transfers:</span> In connection with a merger or acquisition, with user notice.</li>
+                            <li><span>Protection of Rights:</span> To protect the safety of Win-Win Token, users, or the public.</li>
+                        </ul>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>6. Data Retention</h3>
+                        <p>We retain your data as long as your account is active. You may request deletion at any time by contacting us at <a href="mailto:winwinsolana@gmail.com">winwinsolana@gmail.com</a>. Some data may be retained to fulfill legal obligations.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>7. Data Security</h3>
+                        <p>We implement industry-standard security measures including encryption and secure server infrastructure. However, no method of internet transmission is 100% secure and we cannot guarantee absolute security.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>8. Children&#8217;s Privacy</h3>
+                        <p>Our Services are not directed to children under 13. We do not knowingly collect information from children. If you believe a child has provided us personal data, please contact us immediately.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>9. Your Rights</h3>
+                        <ul class="privacy-list">
+                            <li><span>Access:</span> Request a copy of the personal data we hold about you.</li>
+                            <li><span>Correction:</span> Request correction of inaccurate or incomplete data.</li>
+                            <li><span>Deletion:</span> Request deletion of your personal data.</li>
+                            <li><span>Objection:</span> Object to the processing of your data in certain circumstances.</li>
+                            <li><span>Portability:</span> Receive your data in a structured, machine-readable format.</li>
+                        </ul>
+                        <p>Contact us at <a href="mailto:winwinsolana@gmail.com">winwinsolana@gmail.com</a> to exercise any of these rights.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>10. Cookies &amp; Tracking</h3>
+                        <p>Our website may use cookies to enhance browsing, analyze traffic, and understand user preferences. You can control cookies through your browser settings. Disabling cookies may affect certain features.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>11. Changes to This Policy</h3>
+                        <p>We may update this Privacy Policy periodically. We will notify users of significant changes by updating the date at the top of this page and, where appropriate, through in-app notifications or email.</p>
+                    </div>
+                    <div class="privacy-block">
+                        <h3>12. Contact Us</h3>
+                        <p>For questions about this Privacy Policy, please contact us:</p>
+                        <div class="privacy-contact">
+                            <p>&#128231; <a href="mailto:winwinsolana@gmail.com">winwinsolana@gmail.com</a></p>
+                            <p>&#128205; T&#252;rkiye</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>&#169; 2026 Win-Win Token. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
